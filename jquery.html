@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <script>
+
+
+        $( document ).ready(function(){
+ 
+            // Sets up click behavior on all button elements with the alert class
+            // that exist in the DOM when the instruction was executed
+            $( "button.alert" ).on( "click", function() {
+                console.log( "Check out this example!" );
+            });
+         
+            // Now create a new button element with the alert class. This button
+            // was created after the click listeners were applied above, so it
+            // will not have the same click behavior as its peers
+            $( "<button class='alert'>Alert!, is this working properly?</button>" ).appendTo( document.body );
+        });
+        </script>
+
+<script>
+    $( "p" ).hide();
+ 
+ // Instantaneously show all divs that have the hidden style class
+ $( "div.hidden" ).show();
+</script>
+<script>
+$(document).ready(function() {
+ $("html").append(
+       "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic JQuery</h1>\
+                    <p>Paragraph 1</p>\
+                    <p>Paragraph 2</p>\
+                    <p>Paragraph 3</p>\
+            </div>\
+            </div>\
+        </body>"
+ );
+});
+</script>
+</html>
